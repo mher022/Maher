@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Light</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Noto+Serif+Vithkuqi:wght@600&family=Oswald:wght@300&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        body{
+            overflow: hidden;
+        }
+
+
+
+        .video-background {
+            position: relative;
+            width: 5;
+            height: 200px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        video {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #title-image{
+            position: absolute;
+            margin: 0px;
+            top: 3%;
+            left: 25%;
+            width: 800;
+            height: 400px;
+        }
+
+        #see-button{
+            position: absolute;
+            margin: 0px;
+            top: 48%;
+            left: 47%;
+            border: 2px solid black;
+            width: 100px;
+            height: 40px;
+            font-size: 17px;
+            font-family: Oswald;
+            background-color: rgb(235, 216, 12);
+        }
+
+        #see-button:hover{
+            background-color: rgb(210, 170, 12);
+        }
+
+        #see-button:active{
+            background-color: rgb(170, 130, 12);
+            border: 3px solid black;
+        }
+
+        
+        </style>
+    </head>
+    <body>
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop poster="images/project-light-image.png">
+              <source src="Project-Light-early-footage.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <img src="project-light-title.png" alt="game name image" id="title-image">
+            <a href="https://mher22.itch.io/project-light" download>
+                <button id="see-button">GET NOW</button>
+            </a>
+            
+            
+          </div>
+    </body>
+</html>
